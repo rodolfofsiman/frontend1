@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Rodolfo Siman</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Rodolfo Siman</h1>
+
+        <nav aria-label="Menu principal">
+            <a href="index-semantico.html">Início</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Entre em contato</h2>
+        <p>Preencha o formulário abaixo para enviar sua mensagem.</p>
+
+        <form action="/Contato" method="post">
+            <fieldset>
+                <legend>Dados de contato</legend>
+
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione...</option>
+                        <option value="aulas">Aulas de inglês</option>
+                        <option value="projetos">Projetos</option>
+                        <option value="outros">Outros assuntos</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                </div>
+
+                <div class="consentimento">
+                    <input type="checkbox" id="consentimento" name="consentimento" value="aceito" required>
+                    <label for="consentimento">
+                        Autorizo o uso dos meus dados para responder ao contato.
+                    </label>
+                </div>
+            </fieldset>
+
+            <button type="submit">Enviar mensagem</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Rodolfo Siman.</p>
+    </footer>
+</body>
+</html>
