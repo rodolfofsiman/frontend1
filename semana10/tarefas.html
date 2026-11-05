@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas - Rodolfo Siman</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/tarefas.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Rodolfo Siman</h1>
+
+        <nav aria-label="Menu principal">
+            <a href="index-semantico.html">Início</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Minha lista de tarefas</h2>
+        <p>Adicione tarefas para organizar seus estudos.</p>
+
+        <form id="form-tarefa">
+            <div class="campo">
+                <label for="nova">Nova tarefa</label>
+                <input type="text" id="nova" name="tarefa" required>
+            </div>
+
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <ul id="tarefas"></ul>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Rodolfo Siman.</p>
+    </footer>
+</body>
+</html>
